@@ -3,31 +3,33 @@ body {
   padding: 0;
   background-image: url("https://image.freepik.com/free-vector/technology-futuristic-circuit-digital-background_77313-288.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   color: #649164; }
 
 #main #title {
   text-align: center;
   font-size: 44px;
-  padding: 10px;
-  margin: 0; }
+  margin: 2em auto; }
 
 #main #img-div {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   justify-items: center;
   -webkit-transform: translateY(-10%);
   -ms-transform: translateY(-10%);
   transform: translateY(-10%);
   max-width: 600px;
   margin: 0 auto; }
-  #main #img-div #image {
-    display: block;
-    max-width: 100%; }
-  #main #img-div #img-caption {
-    text-align: center;
-    margin-top: 2pc; }
+  #main #img-div figure {
+    margin: 0; }
+    #main #img-div figure #image {
+      display: block;
+      max-width: 100%; }
+    #main #img-div figure #img-caption {
+      text-align: center;
+      margin-top: 2pc; }
 
 #main article {
   display: -ms-grid;
@@ -36,16 +38,23 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   max-width: 500px;
-  margin: 0 auto 3em auto;
-  font-size: .8em; }
-  #main article h2 {
-    font-weight: 400; }
+  margin: 0 auto 3em auto; }
+  #main article #tribute-info {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0; }
   #main article a {
     text-decoration: none;
     color: #0B9C0E; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 200px) {
+  #title {
+    font-size: 22px !important; }
+  #tribute-info {
+    font-size: 14px !important; } }
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
   #title {
     font-size: 30px !important; }
-  article {
-    font-size: .6em !important; } }
+  #tribute-info {
+    font-size: 18px !important; } }

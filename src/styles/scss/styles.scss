@@ -1,19 +1,26 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://image.freepik.com/free-vector/technology-futuristic-circuit-digital-background_77313-288.jpg");
+  background-color: #08323c;
   background-position: center;
-  background-repeat: repeat-y;
-  background-size: cover;
-  color: #649164;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 
 #main {
+  max-width: 800px;
+  background-image: url("https://image.freepik.com/free-vector/technology-futuristic-circuit-digital-background_77313-288.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  margin: auto;
+  color: #649164;
   #title {
     text-align: center;
     font-size: 44px;
-    margin: 2em auto;
+    padding-top: 2em;
+    margin: auto;
   }
   #img-div {
     display: flex;
@@ -21,27 +28,26 @@ body {
     transform: translateY(-10%);
     max-width: 600px;
     margin: 0 auto;
-    figure{
+    figure {
       margin: 0;
       #image {
         display: block;
-        max-width: 100%;      
+        max-width: 100%;
       }
-      #img-caption{
-          text-align: center;
-          margin-top: 2pc;
+      #img-caption {
+        text-align: center;
+        margin-top: 2pc;
       }
     }
-    
-    
   }
   article {
     display: grid;
     justify-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
     max-width: 500px;
-    margin: 0 auto 3em auto;
+    margin: 0 auto;
     #tribute-info {
       font-weight: 400;
       font-size: 24px;
@@ -50,13 +56,13 @@ body {
     a {
       margin-top: 20px;
       text-decoration: none;
-      color: #0B9C0E;
+      color: #0b9c0e;
     }
   }
 }
 
-@media only screen and (max-width: 200px){
-  #title{
+@media only screen and (max-width: 200px) {
+  #title {
     font-size: 22px !important;
   }
   #tribute-info {
@@ -64,12 +70,11 @@ body {
   }
 }
 
-
-@media only screen and (min-width: 200px) and (max-width: 400px){
-    #title{
-        font-size: 30px !important;
-    }
-    #tribute-info {
-      font-size: 18px !important;
-    }
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  #title {
+    font-size: 30px !important;
+  }
+  #tribute-info {
+    font-size: 18px !important;
+  }
 }

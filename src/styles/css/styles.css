@@ -37,7 +37,7 @@ body {
   padding-right: 10%;
   max-width: 500px;
   margin: 0 auto 3em auto;
-  font-size: .9em; }
+  font-size: .8em; }
   #main article h2 {
     font-weight: 400; }
   #main article a {
@@ -46,4 +46,6 @@ body {
 
 @media only screen and (max-width: 400px) {
   #title {
-    font-size: 30px !important; } }
+    font-size: 30px !important; }
+  article {
+    font-size: .6em; } }
